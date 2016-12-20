@@ -1,3 +1,8 @@
+@font-face{
+	font-family: "HelveticaNeue Light";
+	src : '../fonts/HelveticaNeue Light.ttf';
+}
+
 body{
 	margin: 0;
 	background-color: lightgray;
@@ -5,11 +10,12 @@ body{
 
 #menu{
 	display: inline-block;
-	position: absolute;
+	position: fixed;
 	background-color: #333;
 	height: 100%;
-	width: 100px;
+	width: 70px;
 	padding: 10px;
+	padding-right: 7px;
 }
 .color{
 	display: inline-block;
@@ -17,12 +23,26 @@ body{
 	height: 30px;
 	margin: 0 5px 5px 0;
 }
+
+input.brush{
+	width: 60px;
+}
+
+label.brush{
+	width: 60px;
+	color: white;
+	font-family: "HelveticaNeue Light", sans-serif;
+	font-size: 10pt;
+}
+
 #canvas{
+	position: absolute;
 	display: inline-block;
-	margin-left: 165px;
-	margin-top: 15px;
-	width: 50%;
-	height: 50%;
+	margin-left: 50%;
+	margin-top: 50vh;
+	transform: translate(-50%, -50%);
+	width: 30%;
+	height: 60%;
 	max-width: 95%;
 	max-height: 98%;
 	box-shadow: 2px 4px 15px #333;

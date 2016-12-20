@@ -2,14 +2,21 @@
 <html>
 <head>
 	<title>Paint It</title>
-	<!--<meta charset="utf-8">-->
-	<!--<meta lang="en">-->
+	<meta charset="utf-8">
+	<meta lang="en">
+	<link rel="icon" href="./images/Brush-icon.png">	
 	<link rel="stylesheet" type="text/css" href="./css/paint.css">
 	<script type="text/javascript" src="./js/paint.js"></script>
 </head>
 
 <body onload="init();">
-	<div id="menu"></div>
+	<div id="menu">
+		<div id="palette"></div>
+		<div id="tools">
+			<label class="brush" for="brush">Brush size 10 px</label>
+			<input class="brush" name="brush" type="range" min="1" max="50" value="10">
+		</div>
+	</div>
 </body>
 
 </html>
