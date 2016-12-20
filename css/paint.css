@@ -1,0 +1,31 @@
+body{
+	margin: 0;
+	background-color: lightgray;
+}
+
+#menu{
+	display: inline-block;
+	position: absolute;
+	background-color: #333;
+	height: 100%;
+	width: 100px;
+	padding: 10px;
+}
+.color{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin: 0 5px 5px 0;
+}
+#canvas{
+	display: inline-block;
+	margin-left: 165px;
+	margin-top: 15px;
+	width: 50%;
+	height: 50%;
+	max-width: 95%;
+	max-height: 98%;
+	box-shadow: 2px 4px 15px #333;
+
+}
+
