@@ -17,6 +17,9 @@ body{
 	padding: 10px;
 	padding-right: 7px;
 }
+#palette{
+	line-height: 0;
+}
 .color{
 	display: inline-block;
 	width: 30px;
@@ -36,16 +39,16 @@ label.brush{
 }
 
 #canvas{
-	position: absolute;
+	position: relative;
 	display: inline-block;
-	margin-left: 50%;
-	margin-top: 50vh;
-	transform: translate(-50%, -50%);
-	width: 30%;
-	height: 60%;
+	left: 102px;
+	top: 15px;
+	/*transform: translate(-50%, -50%);*/
+	width: 600px;
+	height: 300px;
 	max-width: 95%;
 	max-height: 98%;
 	box-shadow: 2px 4px 15px #333;
-
+	line-height: 0;
 }
 
