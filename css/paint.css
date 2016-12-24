@@ -2,12 +2,23 @@
 	font-family: "HelveticaNeue Light";
 	src : '../fonts/HelveticaNeue Light.ttf';
 }
-
 body{
 	margin: 0;
 	background-color: lightgray;
 }
-
+#canvas{
+	position: relative;
+	display: inline-block;
+	background-color: "white";
+	left: 102px;
+	top: 15px;
+	width: 500px;
+	height: 300px;
+	box-shadow: 2px 4px 15px #333;
+	line-height: 0;
+	overflow: hidden;
+	cursor: crosshair;
+}
 #menu{
 	display: inline-block;
 	position: fixed;
@@ -16,11 +27,15 @@ body{
 	width: 70px;
 	padding: 10px;
 	padding-right: 7px;
+	z-index: 1;
 }
-#palette{
+#palette, #tools{
 	line-height: 0;
 }
-.color{
+#color-picker{
+	margin: 7px 0 12px 0;
+}
+.color, .tool{
 	display: inline-block;
 	width: 30px;
 	height: 30px;
@@ -31,24 +46,24 @@ input.brush{
 	width: 60px;
 }
 
-label.brush{
+label.brush, p.brush{
 	width: 60px;
 	color: white;
 	font-family: "HelveticaNeue Light", sans-serif;
 	font-size: 10pt;
+	line-height: initial;
 }
 
-#canvas{
-	position: relative;
-	display: inline-block;
-	left: 102px;
-	top: 15px;
-	/*transform: translate(-50%, -50%);*/
-	width: 600px;
-	height: 300px;
-	max-width: 95%;
-	max-height: 98%;
-	box-shadow: 2px 4px 15px #333;
-	line-height: 0;
+p.brush{
+	margin: 5px 0;
 }
 
+#shape, #fill{
+	filter: invert(90%);
+}
+
+.tool{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 80%;
+}
